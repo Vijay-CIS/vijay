@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/5ada37245d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js" defer></script>
+    <title>Vijay Subramani</title>
+    <link
+      class="x-icon"
+      rel="icon"
+      type="image/x-icon"
+      href="assets/x-icon.png"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <div class="header">
+      <!-- <a href="#" class="logo">Portfolio</a> -->
+      <nav class="navbar">
+        <i class="fa fa-bars" id="bars"></i>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <!-- <li><a href="#blogs">Blogs</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Fixed social media icons -->
+
+    <div class="icon-bar">
+      <a
+        href="https://www.instagram.com/vijay_funz/"
+        target="_blank"
+        class="instagram"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a
+        href="mailto:vijay.annamalai001@gmail.com"
+        target="_blank"
+        class="email"
+      >
+        <i class="fa-regular fa-envelope"></i
+      ></a>
+      <a href="https://github.com/Vijay-CIS" target="_blank" class="github"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/vijay-subramani-5b58371a3/"
+        target="_blank"
+        class="linkedin"
+        ><i class="fa-brands fa-linkedin-in"></i
+      ></a>
+    </div>
+
+    <!-- Hero Page -->
+    <div id="home">
+      <section class="hero">
+        <img class="hero-img" src="assets/hero.jpeg" loading="lazy" />
+
+        <article>
+          <span>Hello there!! <i class="fas fa-heart heart"></i></span>
+          <p class="hero-name">I'm <span>Vijay</span></p>
+
+          <p class="hero-title" id="typewriter"></p>
+          <a href="#contact"> <button class="hire-btn">Hire Me</button> </a>
+          <a href="/assets/Resume.pdf " target="_blank">
+            <button class="resume-btn"><span> Resume </span></button>
+          </a>
+        </article>
+      </section>
+    </div>
+
+    <!-- <div class="divider">Skills</div> -->
+
+    <!-- Skills -->
+    <div id="skills">
+      <section class="skills">
+        <div class="frameworks">
+          <p class="skill-header">Skills</p>
+          <div class="tab">
+            <button
+              class="tablinks active"
+              onclick="openName(event, 'frontend')"
+            >
+              Frontend
+            </button>
+            <button class="tablinks" onclick="openName(event, 'backend')">
+              Backend
+            </button>
+            <button class="tablinks" onclick="openName(event, 'language')">
+              Language
+            </button>
+            <button class="tablinks" onclick="openName(event, 'others')">
+              Others
+            </button>
+          </div>
+
+          <!-- Tab content -->
+          <div id="frontend" class="tabcontent" style="display: block">
+            <p>Html</p>
+            <p>Css</p>
+            <p>JavaScript</p>
+            <p>Angular</p>
+            <p>React</p>
+            <p>Bootstrap</p>
+            <p>Tailwind</p>
+          </div>
+
+          <div id="backend" class="tabcontent">
+            <p>Spring Boot</p>
+            <p>Laravel</p>
+            <p>PHP</p>
+            <p>Flask</p>
+            <p>Nodejs</p>
+            <p>Github</p>
+          </div>
+
+          <div id="language" class="tabcontent">
+            <p>Java</p>
+            <p>Python</p>
+          </div>
+
+          <div id="others" class="tabcontent">
+            <p>Swagger</p>
+            <p>Postman</p>
+            <p>Canva</p>
+            <p>Adobe XD</p>
+            <p>Adobe Photoshop</p>
+            <p>JIRA</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Projects -->
+    <div id="projects">
+      <section class="projects">
+        <p class="project-header">Projects</p>
+        <div class="project-container">
+          <!-- <img class="project-img" src="assets/petshop.jpg" loading="lazy" /> -->
+          <article class="project-details">
+            <p class="project-name">PetShop App</p>
+            <p class="project-description">Spring MVC</p>
+
+            <div class="chip">
+              <img src="/assets/github.png" alt="github" />
+              <a
+                href="https://github.com/Vijay-CIS/Petshop-SpringSecurity"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </article>
+
+          <!-- <img class="project-img" src="assets/movie.png" loading="lazy" /> -->
+          <article class="project-details">
+            <p class="project-name">Movie App</p>
+            <p class="project-description">Spring Boot RestAPI</p>
+
+            <div class="chip">
+              <img
+                src="/assets/github.png"
+                alt="github"
+                width="96"
+                height="96"
+              />
+              <a
+                href="https://github.com/Vijay-CIS/movieapp-api"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </article>
+
+          <article class="project-details">
+            <p class="project-name">Certificate Generator</p>
+            <p class="project-description">JavaScript</p>
+
+            <div class="chip">
+              <img
+                src="/assets/github.png"
+                alt="github"
+                width="96"
+                height="96"
+              />
+              <a
+                href="https://github.com/Vijay-CIS/Certificate-Generator"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </article>
+
+          <article class="project-details">
+            <p class="project-name">Placement Prediction</p>
+            <p class="project-description">JavaScript</p>
+
+            <div class="chip">
+              <img
+                src="/assets/github.png"
+                alt="github"
+                width="96"
+                height="96"
+              />
+              <a
+                href="https://github.com/Vijay-CIS/Placement-Prediction"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- contact form -->
+
+    <div id="contact">
+      <section class="contact">
+        <form class="contact-form" method="post"">
+        <p class="contact-header">Get in touch</p>
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter e-mail"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Enter subject"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="message">Message</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter the message"
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input
+            value="Submit"
+            type="submit"
+            onclick="sendEmail(); reset(); return false;"
+            class="submit-btn"
+          />
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-row">
+        <div class="col-md-3">
+          <h3>Address:</h3>
+          <h4>
+            No:22/62 4th Street 2nd Cross<br />
+            Nehruji Nagar ARAKONAM,<br />
+            TAMIL NADU 631001 India
+          </h4>
+        </div>
+        <!-- <div class="col-md-3">
+          <h3>Call:</h3>
+          <h4>9500373830</h4>
+        </div> -->
+        <div class="col-md-3">
+          <h3>Email:</h3>
+          <a href="mailto:vijay.annamalai001@gmail.com" target="_blank"
+            >vijay.annamalai001@gmail.com</a
+          >
+        </div>
+      </div>
+      <div class="footer-social-link">
+        <h3>Follow Me</h3>
+
+        <a href="https://m.facebook.com/profile.php?id=100006537935100">
+          <i class="fa fa-facebook"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/vijay-subramani-5b58371a3/">
+          <i class="fa fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.instagram.com/vijay_funz/">
+          <i id="insta-icon" class="fa fa-instagram"></i>
+        </a>
+        <a href="https://github.com/Vijay-CIS">
+          <i class="fa fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <p class="footer-title">Developed By <span>Vijay</span></p>
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
